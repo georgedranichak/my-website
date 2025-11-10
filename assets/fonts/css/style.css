@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "Apple Kid";
+  src: url("/assets/fonts/apple-kid-cyrillic-included.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; /* avoids invisible text while loading */
+}
+
+body {
+  font-family: "Apple Kid", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
