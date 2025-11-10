@@ -1,0 +1,75 @@
+/* --- archive.css --- */
+.section-title {
+  display: block;
+  margin: 2rem 0 0.75rem;
+  font-size: 1.15rem;
+  line-height: 1.2;
+}
+
+.archive-card h2 {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.modal-title { font-size: 1rem; }
+.modal-note  { font-size: 0.85rem; }
+.archive-card button { font-size: 0.9rem; }
+.button-like {
+  display:inline-block;
+  padding:.5rem .75rem;
+  border-radius:10px;
+  border:1px solid var(--border);
+  background:#111;
+  color:#fff;
+  text-decoration:none;
+}
+.button-like:hover { filter: brightness(1.1); }
+
+/* --- Navigation with double border & icons --- */
+nav {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+  padding: 0.6rem 1.2rem;
+  border: 2px double var(--border, #666);
+  border-radius: 12px;
+  list-style: none;
+  background: #0c0c0c;
+}
+
+nav li {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.6rem 1rem;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+nav a:hover,
+nav a:focus {
+  border-color: var(--border, #888);
+  background: #222;
+  transform: scale(1.05);
+}
+
+nav svg {
+  width: 18px;
+  height: 18px;
+  stroke-width: 1.8px;
+}

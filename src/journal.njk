@@ -1,0 +1,15 @@
+---
+layout: layouts/base.njk
+permalink: "/journal/index.html"
+title: "Journal"
+---
+<h1>Journal</h1>
+<p class="muted">Entries are sorted newest first.</p>
+<ul class="entries">
+{%- for post in collections.posts | reverse -%}
+  <li>
+    <a href="{{ post.url }}">{{ post.data.title }}</a>
+    <time datetime="{{ post.date.toISOString() }}">{{ post.date | readableDate }}</time>
+  </li>
+{%- endfor -%}
+</ul>

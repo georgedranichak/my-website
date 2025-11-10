@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Journal</title>
+  <meta name="color-scheme" content="dark">
+  <link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+  <header>
+    <div class="container center stack">
+      <h1 class="brand"><a href="/">George Dranichak</a></h1>
+<nav>
+  <ul>
+    <li>
+      <a href="/journal/">
+        <i data-lucide="book-open"></i>
+        Journal
+      </a>
+    </li>
+    <li>
+      <a href="/archive.html">
+        <i data-lucide="archive"></i>
+        Archive
+      </a>
+    </li>
+    <li>
+      <a href="/my links.html">
+        <i data-lucide="link-2"></i>
+        My Links
+      </a>
+    </li>
+  </ul>
+</nav>
+    </div>
+  </header>
+  <main class="container stack">
+    <h1>Journal</h1>
+<p class="muted">Entries are sorted newest first.</p>
+<ul class="entries"><li>
+    <a href="/journal/Update/">Here it comes!</a>
+    <time datetime="2025-11-10T00:00:00.000Z">Nov 9, 2025</time>
+  </li><li>
+    <a href="/journal/MY FIRST ENTRY/">Journal Prologue - Before it Goes Live</a>
+    <time datetime="2025-10-21T00:00:00.000Z">Oct 20, 2025</time>
+  </li></ul>
+
+  </main>
+  <footer>
+    <div class="container center">© <span id="year"></span> George Dranichak</div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+<script>
+  lucide.createIcons();
+</script>
+</body>
+</html>

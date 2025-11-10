@@ -1,0 +1,21 @@
+---
+layout: layouts/base.njk
+permalink: "/archive.html"
+title: "Project Archive"
+---
+<link rel="stylesheet" href="/css/archive.css">
+
+<p class="muted">Click a project to view its full-page preview.</p>
+
+{% for section in archive.sections %}
+  <h2 class="section-title">{{ section.title }}</h2>
+  <div class="archive-grid">
+    {% for item in section.items %}
+      {% set slug = item.title | lower | replace(r/[^a-z0-9]+/g, "-") | replace(r/(^-|-$)/g, "") %}
+      <article class="archive-card">
+        <h2>{{ item.title }}</h2>
+        <a class="button-like" href="/archive/{{ slug }}/">Open</a>
+      </article>
+    {% endfor %}
+  </div>
+{% endfor %}

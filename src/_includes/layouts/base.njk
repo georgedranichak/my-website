@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ title or "George Dranichak" }}</title>
+  <meta name="color-scheme" content="dark">
+  <link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+  <header>
+    <div class="container center stack">
+      <h1 class="brand"><a href="/">George Dranichak</a></h1>
+<nav>
+  <ul>
+    <li>
+      <a href="/journal/">
+        <i data-lucide="book-open"></i>
+        Journal
+      </a>
+    </li>
+    <li>
+      <a href="/archive.html">
+        <i data-lucide="archive"></i>
+        Archive
+      </a>
+    </li>
+    <li>
+      <a href="/my links.html">
+        <i data-lucide="link-2"></i>
+        My Links
+      </a>
+    </li>
+  </ul>
+</nav>
+    </div>
+  </header>
+  <main class="container stack">
+    {{ content | safe }}
+  </main>
+  <footer>
+    <div class="container center">© <span id="year"></span> George Dranichak</div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+<script>
+  lucide.createIcons();
+</script>
+</body>
+</html>
