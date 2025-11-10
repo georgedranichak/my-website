@@ -1,11 +1,12 @@
 {
-  "name": "george-website",
+  "name": "my-website",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "eleventy --serve",
-    "build": "eleventy"
+    "build": "eleventy",
+    "start": "eleventy --serve --quiet"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1"
+    "@11ty/eleventy": "^3.0.0"
   }
 }

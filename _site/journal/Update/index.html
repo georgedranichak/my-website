@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Here it comes! — George Dranichak</title>
+  <meta name="color-scheme" content="dark">
+  <link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+  <header>
+    <div class="container center stack">
+      <h1 class="brand"><a href="/">George Dranichak</a></h1>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="/journal/">Journal</a></li>
+          <li><a href="/archive.html">Project Archive</a></li>
+          <li><a href="/my links.html">My Links</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container stack">
+    <article class="card stack">
+      <!-- Title & date at the top -->
+      <header class="stack">
+        <h1 style="margin:0">Here it comes!</h1>
+        <p class="muted" style="margin:0">
+          <time datetime="2025-11-10T00:00:00.000Z">Nov 9, 2025</time>
+        </p>
+      </header>
+
+      <!-- Body content from the markdown -->
+      <section class="stack">
+        <p>I've updated my layout and my code to help create these journal entries a bit easier. In addition, I totally revamped the website layout to match what I want. It is accessible and works smoothly. I am going to make it live soon.</p>
+
+      </section>
+
+      <!-- Optional: back link -->
+      <nav aria-label="Entry navigation">
+        <ul class="entries">
+          <li><a href="/journal/">← Back to Journal</a><time aria-hidden="true"></time></li>
+        </ul>
+      </nav>
+    </article>
+  </main>
+
+  <footer>
+    <div class="container center">© <span id="year"></span> George Dranichak</div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

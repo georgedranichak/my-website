@@ -1,0 +1,91 @@
+@font-face {
+  font-family: "Apple Kid (Cyrillic included)";
+  src: local("Apple Kid (Cyrillic included)"),
+       url("../fonts/AppleKid-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --bg: #000;
+  --text: #fff;
+  --muted: #cbd5e1;
+  --link: #ffffff;
+  --link-visited: #00ffff;
+  --border: #ffffff55;
+  --radius: 14px;
+  --maxw: 56rem;
+  --step-0: clamp(1rem, 0.95rem + 0.2vw, 1.125rem);
+  --step-1: clamp(1.25rem, 1.15rem + 0.6vw, 1.75rem);
+  --step-2: clamp(1.75rem, 1.5rem + 1.2vw, 2.25rem);
+}
+*,*::before,*::after{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background:#000;
+  color:#fff;
+  font-family:"Apple Kid (Cyrillic included)", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height:1.6;
+  font-size:var(--step-0);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+img{max-width:100%;display:block;height:auto}
+a{color:var(--link);text-decoration:none}
+a:hover{text-decoration:underline}
+a:visited{color:var(--link-visited)}
+a:focus-visible{outline:2px dashed currentColor;outline-offset:2px}
+.container{width:min(100% - 2rem, var(--maxw));margin-inline:auto}
+.center{text-align:center}
+.stack > * + *{margin-top:1rem}
+header{position:sticky;top:0;background:rgba(0,0,0,.6);backdrop-filter:saturate(1.2) blur(6px);border-bottom:1px solid var(--border)}
+.brand{font-size:var(--step-2);font-weight:700;margin:0}
+nav ul{list-style:none;display:flex;gap:1rem;justify-content:center;padding:0;margin:.75rem 0}
+main{padding-block:2rem}
+.lead{font-size:var(--step-1);color:var(--muted);margin:0}
+.muted{color:var(--muted)}
+.card{border:1px solid var(--border);border-radius:var(--radius);padding:1rem;background:#0b0b0b}
+figure{margin:2rem auto 3rem;max-width:22rem}
+figcaption{font-size:0.95rem;color:var(--muted);padding-top:.5rem;text-align:center}
+footer{border-top:1px solid var(--border);padding:2rem 0;color:var(--muted)}
+.entries {list-style:none; padding:0; margin:0; display:grid; gap:.5rem}
+.entries li {display:flex; justify-content:space-between; align-items:baseline; gap:1rem; border:1px solid var(--border); border-radius:12px; padding:.5rem .75rem; background:#0b0b0b}
+.entries time {font-variant-numeric: tabular-nums; opacity:.85}
+
+/* --- Navigation styling --- */
+nav {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  border: 2px double var(--border, #666);
+  border-radius: 12px;
+  list-style: none;
+  background: #0c0c0c;
+}
+
+nav a {
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+/* Make it obvious they’re clickable */
+nav a:hover,
+nav a:focus {
+  border-color: var(--border, #888);
+  background: #222;
+  transform: scale(1.05);
+}
+
