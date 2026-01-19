@@ -5,6 +5,13 @@ date: 2026-01-18
 tags: posts
 permalink: "/journal/Starting a New Semester/index.html"
 ---
+      <header class="stack">
+        <h1 style="margin:0">Starting a New Semester</h1>
+        <p class="muted" style="margin:0">
+          <time datetime="2026-01-18">Jan 18, 2026 </time>
+        </p>
+      </header>
+      
 Tomorrow I start my last spring semester at St. Bonaventure University's School Counseling Program! I jump into an internship on Tuesday and I will have a lot of work to do! I'll be quite busy so I'm not sure how much attention I'll give to this website. Thanks for reading this!
 
 <nav aria-label="Entry navigation">
