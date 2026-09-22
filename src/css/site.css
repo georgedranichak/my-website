@@ -89,3 +89,39 @@ nav a:focus {
   transform: scale(1.05);
 }
 
+.journal-photo {
+  margin: 2.5rem auto 3rem;
+  max-width: 650px;
+  text-align: center;
+}
+
+.journal-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 450px;
+  object-fit: contain;
+  border-radius: 12px;
+  margin: 0 auto;
+}
+
+.journal-photo figcaption {
+  margin-top: 0.75rem;
+  padding-top: 0;
+  font-size: 0.95rem;
+  font-style: italic;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+/* Mobile photo styling */
+
+@media (max-width: 600px) {
+  .journal-photo {
+    margin: 2rem auto;
+  }
+
+  .journal-photo img {
+    max-height: 350px;
+  }
+}
